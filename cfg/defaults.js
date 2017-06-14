@@ -19,6 +19,7 @@ function getDefaultModules() {
     preLoaders: [
       {
         test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
         include: srcPath,
         loader: 'eslint-loader'
       }
